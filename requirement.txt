@@ -1,0 +1,3 @@
+pip install Flask
+pip intall opencv
+pip install pyautogui

@@ -1,0 +1,46 @@
+<!DOCTYPE  html>
+<!---From https://codepen.io/frytyler/pen/EGdtg--->
+<head>
+    <meta charset="UTF-8">
+    <title>Gesture Control System</title>
+    <link href = 'https://fonts.googleapis.com/css?family=Pacifico' rel = 'stylesheet' type = 'text/css'>
+    <link href = 'https://fonts.googleapis.com/css?family=Arimo' rel = 'stylesheet' type = 'text/css'>
+    <link href = 'https://fonts.googleapis.com/css?family=Hind:300' rel= 'stylesheet' type = 'text/css'>
+    <link href = 'https://fonts.googlepis.com/css?family=Open+Sans+Condensed:300' rel = 'stylesheet' type = 'text/css'>
+    <link rel = "stylesheet" href = "{{ url_for('static',filename = 'css/style1.css')}}">
+
+</head>
+
+<body>
+    <div class="login">
+            <h1>AI Based Gesture Control System</h1>
+
+        <div class="slides slowFade">
+            <div class="slide">
+                <img src="{{url_for('static',filename='image-1.png')}}" alt="image-1" class="center" />
+            </div>
+            <div class="slide">
+                <img src="{{url_for('static',filename='image-2.png')}}" alt="image-2" class="center" />
+            </div>
+            <div class="slide">
+                <img src="{{url_for('static',filename='image-3.png')}}" alt="image-3" class="center" />
+            </div>
+            <div class="slide">
+                <img src="{{url_for('static',filename='image-4.png')}}" alt="image-4" class="center" />
+            </div>
+            <div class="slide">
+                <img src="{{url_for('static',filename='image-5.png')}}" alt="image-5" class="center" />
+            </div>
+        </div>
+        
+        <!--- Main Input For Receiving Query to our ML --->
+        <form action="{{url_for('activate')}}" method="post">
+            <button type= "submit" class="btn btn-primary btn-block btn-large" class = "center">Start The Web Cammera</button>
+        </form>
+
+         <br>
+         <br>
+    </div>
+    
+</body>    
+</html>
